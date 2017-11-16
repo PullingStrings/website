@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
 main {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .navbar {
@@ -22,3 +29,26 @@ main {
   margin: 4px;
   padding: 4px;
   }
+
+.InnerContainer {
+  border: 1px solid black;
+  margin: 2px;
+  padding: 4px;
+  background-color: red;
+
+}
+
+.HomePageContainer {
+  border: 1px solid black;
+  margin: 2px;
+  padding: 4px;
+  height: 100vh;
+}
+
+.BoxInner {
+  border: 1px solid black;
+  width: 50%;
+  margin: 2px;
+  padding: 4px;
+  background-color: white;
+}

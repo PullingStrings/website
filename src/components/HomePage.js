@@ -4,7 +4,13 @@ class HomePage extends React.Component {
 
   render() {
     return (
-      <h1>My Name is Tito and I am a Junior Web Developer</h1>
+      <div className="HomePageContainer">
+        <div className="InnerContainer">
+          <div className="BoxInner">
+            <h1>My Name is Tito and I am a Junior Web Developer</h1>
+          </div>
+        </div>
+      </div>
     );
   }
 }
