@@ -11,24 +11,22 @@ import ExperiencePage from './components/ExperiencePage';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <BrowserRouter>
-          <main className="container">
-            <nav className="navbar">
-              <Link to="/" className="nav-link">Home</Link>
-              <Link to="/about" className="nav-link">About</Link>
-              <Link to="/projects" className="nav-link">Projects</Link>
-              <Link to="/experience" className="nav-link">Experience</Link>
-            </nav>
-            <section>
-              <Route path="/" component={HomePage}/>
-              <Route path="/about" component={AboutPage}/>
-              <Route path="/projects" component={ProjectsPage}/>
-              <Route path="/experience" component={ExperiencePage}/>
-            </section>
-          </main>
-        </BrowserRouter>
-      </div>
+      <BrowserRouter>
+        <main className="container">
+          <nav className="navbar">
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/about" className="nav-link">About</Link>
+            <Link to="/projects" className="nav-link">Projects</Link>
+            <Link to="/experience" className="nav-link">Experience</Link>
+          </nav>
+          <section>
+            <Route path="/" component={HomePage}/>
+            <Route path="/about" component={AboutPage}/>
+            <Route path="/projects" component={ProjectsPage}/>
+            <Route path="/experience" component={ExperiencePage}/>
+          </section>
+        </main>
+      </BrowserRouter>
     );
   }
 }
