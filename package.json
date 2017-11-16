@@ -4,8 +4,10 @@
   "private": true,
   "homepage": "https://PullingStrings.github.io/website",
   "dependencies": {
+    "bootstrap-css-only": "^3.3.7",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17"
   },
   "scripts": {
@@ -13,7 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy" : "npm run build&&gh-pages -d build"
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0"
