@@ -31,18 +31,19 @@ main {
   }
 
 .InnerContainer {
-  border: 1px solid black;
   margin: 2px;
   padding: 4px;
-  background-color: red;
+
 
 }
 
 .HomePageContainer {
-  border: 1px solid black;
   margin: 2px;
-  padding: 4px;
   height: 100vh;
+  background-image: url('./images/homepagePic.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
 }
 
 .BoxInner {

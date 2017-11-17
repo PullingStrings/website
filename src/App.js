@@ -19,13 +19,12 @@ class App extends Component {
             <Link to="/projects" className="nav-link">Projects</Link>
             <Link to="/experience" className="nav-link">Experience</Link>
           </nav>
-          <section>
-            <Route path="/" component={HomePage}/>
-            <Route path="/about" component={AboutPage}/>
-            <Route path="/projects" component={ProjectsPage}/>
-            <Route path="/experience" component={ExperiencePage}/>
-          </section>
+          <Route path="/" component={HomePage}/>
+          <Route path="/about" component={AboutPage}/>
+          <Route path="/projects" component={ProjectsPage}/>
+          <Route path="/experience" component={ExperiencePage}/>
         </main>
+
       </BrowserRouter>
     );
   }

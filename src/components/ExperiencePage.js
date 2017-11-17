@@ -13,15 +13,16 @@ class ExperiencePage extends React.Component {
             Web Development through practical application delivered by industry
             experts
           </p>
-          <p>In the three months, our responsibilities and assignments were to create code and deploy 4 web apps:
-            <ul>
-              <li>NodeJs</li>
-              <li>Express</li>
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>MongoDB</li>
-            </ul>
-          </p>
+          <p>In the three months,
+            our responsibilities and assignments
+            were to create code and deploy 4 web apps:</p>
+          <ul>
+            <li>NodeJs</li>
+            <li>Express</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>MongoDB</li>
+          </ul>
         </div>
       </div>
     );
