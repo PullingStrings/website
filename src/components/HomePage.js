@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link} from 'react-router-dom';
+
 
 class HomePage extends React.Component {
 
@@ -11,13 +13,25 @@ class HomePage extends React.Component {
               <h1>My Name is Tito and I am a Junior Web Developer</h1>
             </div>
             <div className="BoxInner">
-              <h1>About Me</h1>
+              <div className="Button">
+                <Link to="/about" className="nav-link">
+                  <h1>About Me</h1>
+                </Link>
+              </div>
             </div>
             <div className="BoxInner">
-              <h1>Some of my projects</h1>
+              <div className="Button">
+                <Link to="/projects" className="nav-link">
+                  <h1>Projects</h1>
+                </Link>
+              </div>
             </div>
             <div className="BoxInner">
-              <h1>The experience I have had</h1>
+              <div className="Button">
+                <Link to="/experience" className="nav-link">
+                  <h1>Experiences</h1>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

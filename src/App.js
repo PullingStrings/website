@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Link} from 'react-router-dom';
 import 'bootstrap-css-only';
 import './scss/style.scss';
 
@@ -12,20 +12,21 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <main className="container">
+        <div className="container">
           <nav className="navbar">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/about" className="nav-link">About</Link>
             <Link to="/projects" className="nav-link">Projects</Link>
             <Link to="/experience" className="nav-link">Experience</Link>
           </nav>
-          <Route path="/" component={HomePage}/>
+          <Route exact path="/" component={HomePage}/>
           <Route path="/about" component={AboutPage}/>
           <Route path="/projects" component={ProjectsPage}/>
           <Route path="/experience" component={ExperiencePage}/>
-        </main>
-
+        </div>
       </BrowserRouter>
+
+
     );
   }
 }

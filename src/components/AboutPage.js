@@ -15,7 +15,6 @@ class AboutPage extends React.Component {
           </p>
         </div>
       </div>
-
     );
   }
 }
