@@ -1,41 +1,73 @@
 import React from 'react';
-import { Link} from 'react-router-dom';
+// import { Link} from 'react-router-dom';
+// import pic from '../images/homepagePic.jpg';
 
 
 class HomePage extends React.Component {
 
   render() {
     return (
-      <div className="HomePage">
-        <div className="HomePageContainer">
-          <div className="InnerContainer">
-            <div className="BoxInner">
-              <h1>My Name is Tito and I am a Junior Web Developer</h1>
+      <main>
+        <div className="jumbotron">
+          <div className="container text-center">
+            <h1>Tito Here</h1>
+            <p>Full Stack Web developer that loves art, music and travel.</p>
+          </div>
+        </div>
+        <div className="container-fluid bg-3 text-center">
+          <h3>Some of my Work</h3>
+          <div className="row">
+            <div className="col-sm-3">
+              <p>Some text..</p>
+              <img src="https://placehold.it/150x80?text=IMAGE"
+                className="img-responsive"  alt="Image"/>
             </div>
-            <div className="BoxInner">
-              <div className="Button">
-                <Link to="/about" className="nav-link">
-                  <h1>About Me</h1>
-                </Link>
-              </div>
+            <div className="col-sm-3">
+              <p>Some text..</p>
+              <img src="https://placehold.it/150x80?text=IMAGE"
+                className="img-responsive" alt="Image"/>
             </div>
-            <div className="BoxInner">
-              <div className="Button">
-                <Link to="/projects" className="nav-link">
-                  <h1>Projects</h1>
-                </Link>
-              </div>
+            <div className="col-sm-3">
+              <p>Some text..</p>
+              <img src="https://placehold.it/150x80?text=IMAGE"
+                className="img-responsive" alt="Image"/>
             </div>
-            <div className="BoxInner">
-              <div className="Button">
-                <Link to="/experience" className="nav-link">
-                  <h1>Experiences</h1>
-                </Link>
-              </div>
+            <div className="col-sm-3">
+              <p>Some text..</p>
+              <img src="https://placehold.it/150x80?text=IMAGE"
+                className="img-responsive" alt="Image"/>
             </div>
           </div>
         </div>
-      </div>
+        <div className="container-fluid bg-3 text-center">
+          <div className="row">
+            <div className="col-sm-3">
+              <p>Some text..</p>
+              <img src="https://placehold.it/150x80?text=IMAGE"
+                className="img-responsive"  alt="Image"/>
+            </div>
+            <div className="col-sm-3">
+              <p>Some text..</p>
+              <img src="https://placehold.it/150x80?text=IMAGE"
+                className="img-responsive"  alt="Image"/>
+            </div>
+            <div className="col-sm-3">
+              <p>Some text..</p>
+              <img src="https://placehold.it/150x80?text=IMAGE"
+                className="img-responsive"  alt="Image"/>
+            </div>
+            <div className="col-sm-3">
+              <p>Some text..</p>
+              <img src="https://placehold.it/150x80?text=IMAGE"
+                className="img-responsive" alt="Image"/>
+            </div>
+          </div>
+        </div>
+        <footer className="container-fluid text-center">
+          <p>Footer Text</p>
+          <i className="fa fa-github" aria-hidden="true"></i>
+        </footer>
+      </main>
     );
   }
 }

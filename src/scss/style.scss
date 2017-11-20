@@ -1,8 +1,9 @@
 * {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
-
+//
 body {
   margin: 0;
   padding: 0;
@@ -10,54 +11,44 @@ body {
 
 main {
   max-width: 100%;
-  max-height: 100%;
-}
+  min-height: 100vh;
 
-.navbar {
-  margin: 2px;
-  padding: 4px;
-  background-color: white;
-  max-width: 100%;
 }
 
 
 .nav-link {
-  border-radius: 3px;
+  text-decoration: none;
   color: black;
-  margin: 4px;
-  padding: 4px;
-
-}
-
-.InnerContainer {
-  margin: 2px;
-  padding: 4px;
-}
-
-.HomePageContainer {
-  margin: 2px;
-  height: 100vh;
-  background-image: url('../images/homepagePic.jpg');
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  background-color: #d7584b;
-    img {
-      color: black;
+    a {
+      text-decoration: none;
     }
 }
 
-
-
-.BoxInner {
-  width: 50%;
-  margin: 2px;
-  padding: 4px;
+.container-fluid {
+  background-color: white;
+  color: black;
 }
 
-.Button {
-  background-color: #f7e05f;
-    border: 1px solid;
-    border-radius: 3px;
+footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+//==============social media===========
+.fa {
+    padding: 20px;
+    width: 30px;
     text-align: center;
+    text-decoration: none;
+      .fa-github {
+        border: 1px solid black;
+      }
+}
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
 }

@@ -12,18 +12,28 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="container">
-          <nav className="navbar">
-            <Link to="/" className="nav-link">Home</Link>
-            <Link to="/about" className="nav-link">About</Link>
-            <Link to="/projects" className="nav-link">Projects</Link>
-            <Link to="/experience" className="nav-link">Experience</Link>
+        <header>
+          <nav className="navbar navbar-default">
+            <div className="container-fluid">
+              <div className="navbar-header">
+
+                <a className="navbar-brand" href="/">Sibusiso Tito Zwane</a>
+              </div>
+
+              <ul className="nav navbar-nav">
+                <li><Link to="/" className="navbar-item">Home</Link></li>
+                <li><Link to="/about" className="navbar-item">About</Link></li>
+                <li><Link to="/projects" className="navbar-item">Projects</Link></li>
+                <li><Link to="/experience" className="navbar-item">Experience</Link></li>
+              </ul>
+
+            </div>
           </nav>
           <Route exact path="/" component={HomePage}/>
           <Route path="/about" component={AboutPage}/>
           <Route path="/projects" component={ProjectsPage}/>
           <Route path="/experience" component={ExperiencePage}/>
-        </div>
+        </header>
       </BrowserRouter>
 
 
